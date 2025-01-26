@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -13,11 +12,17 @@ export class MenuComponent {
     this.router.navigate([route]);
   }
 
+
   quitGame(): void {
     if (confirm('Are you sure you want to quit?')) {
-      window.location.href = "https://www.someurl.com"; // Redirect to a different page or home page.
+      window.location.href = "https://www.google.com"; // Redirect to a different page or home page.
     }
   }
-  
-  
+//*
+  confirmQuit(): void {
+    window.location.href = 'https://www.google.com';
+  }
+  cancelQuit(): void {
+    // Close the modal or take no action.
+  }
 }

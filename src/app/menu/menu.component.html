@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
     <style>
-        /* Body styling */
         body {
             display: flex;
             flex-direction: column;
@@ -83,13 +82,26 @@
         }
     </style>
 </head>
+
+
+
 <body>
     <h1 style="font-weight: bold;margin-top: 1opx;">Words Recall</h1>
     <br>
     <div class="button-container">
         <button (click)="navigateTo('game')">Play</button>
-        <button (click)="navigateTo('about')">About Us</button>
+        <button (click)="navigateTo('about')">About</button>
         <button (click)="quitGame()">Quit</button>
+
+
+        <!-- quit-confirmation.component.html --
+    <div class="modal">
+        <p>Are you sure you want to quit the game?</p>
+        <button (click)="confirmQuit()">Yes</button>
+        <button (click)="cancelQuit()">No</button>
+  </div>
+-->
+  
     </div>
 
     <br><br><br>
@@ -106,4 +118,7 @@
         }
     </script>
 </body>
+
+
+
 </html>
